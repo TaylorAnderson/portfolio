@@ -1,0 +1,12 @@
+.client-bubble {
+	margin-left: 2em;
+	margin-right: 2em;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.client-bubble img {
+	width: calc(5em + 4vw);
+}

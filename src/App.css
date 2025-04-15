@@ -1,42 +1,61 @@
+* {
+  font-family: "Space Mono";
+}
+body {
+  background-color: #000B1D;
+}
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  z-index: 2;
   padding: 2rem;
-  text-align: center;
+  margin: 0 auto auto;
+  max-width: 640px;
+  width: 100%;
+}
+#header-bg {
+  background-image: url(assets/bpp-gif.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(10px);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.header {
+  padding-bottom: 4.5em;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+h1 {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  font-size: calc(2em + 3vw);
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h2 {
+  font-size: calc(1em + 1vw);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.blurb {
+  position: relative;
+}
+#blurb-bg {
+  position: absolute;
+  z-index: -1;
+  top: -40%;
+  left: -50px;
+  display: flex;
+  align-items:start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+#client-list {
+  display: flex;
+  justify-content: space-evenly;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.testimonial {
+  padding: 20px;
+  border-radius: 20px;
+  background-color: black;
 }

@@ -1,0 +1,16 @@
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+.nav-item {
+	color: white;
+}
+button {
+	background-color: #642d7b;
+}
+button:hover {
+	border-color: white;
+}
+
